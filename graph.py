@@ -114,11 +114,14 @@ class Graph:
       for i in range(len(layer.values)):
         layer.values[i] = self.softmax_activation(layer_idx, i)
 
-  def linear_activation(self):
-    pass
+  def linear_activation(self, layer_idx: int, node_idx: int):
+    return self.net_value(layer_idx,node_idx)
 
-  def sigmoid_activation(self):
-    pass
+  def sigmoid(self, value):
+    return 1/(1 + math.exp(-1*value))
+
+  def sigmoid_activation(self, layer_idx: int, node_idx: int):
+    return self.sigmoid(self.net_value(layer_idx,node_idx))
 
   def relu_activation(self, layer_idx:int, node_idx:int):
     return max(0, self.net_value(layer_idx,node_idx))
