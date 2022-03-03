@@ -1,0 +1,1 @@
+{"layers": [{"label": "i", "weight": [], "type": "input", "activation_func": "sigmoid", "values": [[0.05], [0.1]]}, {"label": "h", "weight": [0.35, 0.35], "type": "hidden", "activation_func": "sigmoid", "values": [[1, 2], [3, 9999]]}, {"label": "o", "weight": [0.6, 0.6], "type": "output", "activation_func": "sigmoid", "values": [[0.4, 0.45], [0.5, 0.55]]}]}
