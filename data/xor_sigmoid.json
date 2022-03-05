@@ -1,0 +1,24 @@
+{
+	"layers": [
+		{
+			"label": "i",
+			"type": "input"
+		},
+		{
+			"label": "h",
+			"type": "hidden",
+			"activation_func": "sigmoid",
+			"weights":[[20,-20],[20,-20]],
+      		"bias_weights":[-10,30],
+			"num_nodes":2
+		},
+		{
+			"label": "o",
+			"type": "output",
+			"activation_func": "sigmoid",
+			"weights":[[20],[20]],
+      		"bias_weights":[-30],
+			"num_nodes":1
+		}
+	]
+}
